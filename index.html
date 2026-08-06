@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
+<html class="light" lang="en" style=""><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Ignatia Vanessa Putri Yusewa - Portfolio</title>
@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -109,6 +111,23 @@
         html { scroll-behavior: smooth; }
         .ambient-shadow { box-shadow: 0 4px 24px rgba(0, 35, 102, 0.05); }
         .ambient-shadow:hover { box-shadow: 0 8px 32px rgba(0, 35, 102, 0.08); transform: translateY(-2px); transition: all 0.3s ease; }
+        
+        /* Swiper custom styles */
+        .swiper-button-next, .swiper-button-prev {
+            color: #00113a !important;
+            background: #ffffff;
+            width: 48px !important;
+            height: 48px !important;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .swiper-button-next:after, .swiper-button-prev:after {
+            font-size: 20px !important;
+            font-weight: bold;
+        }
+        .swiper-pagination-bullet-active {
+            background: #00113a !important;
+        }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
@@ -119,10 +138,12 @@
                 I. Vanessa Putri Y.
             </a>
 <nav class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#about">About</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#expertise">Expertise</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#timeline">Timeline</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#showcase">Showcase</a>
-<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#portfolio">Portfolio</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#showcase">Business</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#portfolio">Projects</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#learning">Learning</a>
 <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-surface-container-highest transition-all duration-300 px-3 py-1.5 rounded-md font-label-sm" href="#contact">Contact</a>
 </nav>
 <a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-sm px-6 py-2.5 rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors scale-95 active:scale-90 transition-transform duration-200" href="#contact">
@@ -157,8 +178,277 @@
 </div>
 <div class="md:col-span-5 mt-12 md:mt-0">
 <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden ambient-shadow">
-<img class="object-cover w-full h-full" data-alt="A professional portrait of an Asian woman in a modern, well-lit industrial office setting. She is wearing professional attire, exuding confidence and competence. The background features subtle elements of engineering blueprints and abstract clinical structures, representing her dual expertise. The lighting is bright and crisp, emphasizing a clean, modern aesthetic with soft navy and emerald green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxWGNMTvMnc5JuXdo4jjBVtOLpECN-Az-JqOo9yhEKv2GFC9qw88uJmRX6PH5PfgcEN3VjVANltTZydxKZH4in9IAB2oQpobY_xPMPSpm-V29Bz7POZ9u9R4uTLl3490AMk-UVzGQkiHZJDVNoTCYQ7tHpt8hIP8ND5xOEfkrJCyurEgCc5L12c8gGQqgNufdclcNDWWHys_xJdA3PCo45EiwGECjFiXbCjNkD17eIhYVxG1R5lqp4"/>
+<img alt="Professional portrait of Ignatia Vanessa Putri Yusewa" class="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3DtJ50CTz-ciBNSZMycuLumIKDZ11qGiUtrKAaZzhr3lRSZLtXKtIldgOIlO8WwWNMVPbIXzKzcykUlDWpNIa41m2o8jFrtca5uBmF1n6ub7sTG8ceGH6eb8TK4HMuzO-NMPUnQwNVlH918_VtKIAp2XDutDH4EPcpXYjWm1V2AEVnlHFLxYSSYSvF71FOvsK-D109-Z7ArGaEpktWMLyJJ3hUerkEQikrgj8mZQEKd7cUqZ0dA54"/>
 </div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 md:py-24 bg-surface-container-low px-container-padding" id="about">
+<div class="max-w-4xl mx-auto text-center space-y-6">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">About Me</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            I am a multidisciplinary professional uniting the rigorous logic of Mechanical Engineering with the critical precision of Pharmacy. As an entrepreneur managing diverse operations—from the heavy machinery at Putri Jaya Automotive Workshop to the meticulous inventory of Yusewa Pharma—I specialize in optimizing complex systems, ensuring reliability, and delivering exceptional outcomes across specialized industries. My unique background allows me to approach problems with a rare blend of mechanical aptitude and clinical diligence.
+        </p>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="py-16 md:py-24 px-container-padding max-w-7xl mx-auto" id="expertise">
+<div class="space-y-12">
+<div class="text-center space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Core Expertise</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Specialized skills cultivated across engineering, healthcare, and business sectors.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/50 ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">settings_suggest</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-2">Heavy Machinery Maintenance</h3>
+<p class="text-on-surface-variant font-body-md">Diagnostic evaluation, preventive maintenance, and major overhauls for industrial and mining equipment.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/50 ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">inventory_2</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-2">Pharmaceutical Supply Chain</h3>
+<p class="text-on-surface-variant font-body-md">End-to-end management of medical inventories, ensuring regulatory compliance and stock optimization.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/50 ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">storefront</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-2">Automotive Workshop Management</h3>
+<p class="text-on-surface-variant font-body-md">Operational leadership, resource allocation, and customer service excellence in high-volume automotive environments.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/50 ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">health_and_safety</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-2">Industrial Safety</h3>
+<p class="text-on-surface-variant font-body-md">Implementation of robust safety protocols, risk assessment, and compliance in high-risk engineering sectors.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface rounded-xl p-6 border border-outline-variant/50 ambient-shadow hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-2">Precision Engineering</h3>
+<p class="text-on-surface-variant font-body-md">Detailed component design, machining oversight, and quality control for critical mechanical systems.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-16 md:py-24 bg-surface-container-low px-container-padding" id="timeline">
+<div class="max-w-4xl mx-auto space-y-12">
+<div class="text-center space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Career Journey</h2>
+</div>
+<div class="relative border-l-2 border-primary/20 pl-8 space-y-12 ml-4 md:ml-0">
+<!-- Item 1 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-secondary border-4 border-surface-container-low"></div>
+<div class="space-y-1">
+<span class="font-label-caps text-secondary font-bold tracking-wider">2022 - PRESENT</span>
+<h3 class="font-headline-sm text-primary font-semibold">Owner &amp; Manager</h3>
+<h4 class="font-body-md text-on-surface-variant font-medium">Putri Jaya Automotive Workshop</h4>
+<p class="font-body-md text-on-surface-variant mt-2">Leading operations, strategic growth, and technical oversight for a comprehensive automotive service center.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-outline-variant border-4 border-surface-container-low"></div>
+<div class="space-y-1">
+<span class="font-label-caps text-secondary font-bold tracking-wider">2020 - 2022</span>
+<h3 class="font-headline-sm text-primary font-semibold">Site Engineer</h3>
+<h4 class="font-body-md text-on-surface-variant font-medium">Bumi Makmur Mining</h4>
+<p class="font-body-md text-on-surface-variant mt-2">Managed heavy mining machinery maintenance schedules, minimized downtime, and oversaw field engineering operations.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-outline-variant border-4 border-surface-container-low"></div>
+<div class="space-y-1">
+<span class="font-label-caps text-secondary font-bold tracking-wider">2018 - 2020</span>
+<h3 class="font-headline-sm text-primary font-semibold">Lead Pharmacist</h3>
+<h4 class="font-body-md text-on-surface-variant font-medium">Yusewa Pharma</h4>
+<p class="font-body-md text-on-surface-variant mt-2">Directed clinical pharmacy services, optimized inventory management systems, and ensured regulatory compliance.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative">
+<div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-outline-variant border-4 border-surface-container-low"></div>
+<div class="space-y-1">
+<span class="font-label-caps text-secondary font-bold tracking-wider">2014 - 2018</span>
+<h3 class="font-headline-sm text-primary font-semibold">Bachelor of Mechanical Engineering</h3>
+<h4 class="font-body-md text-on-surface-variant font-medium">University of Engineering</h4>
+<p class="font-body-md text-on-surface-variant mt-2">Focused on industrial systems design, thermodynamics, and manufacturing processes.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Business Showcase -->
+<section class="py-16 md:py-24 px-container-padding max-w-7xl mx-auto" id="showcase">
+<div class="space-y-16">
+<div class="text-center space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Business Ventures</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Business 1 -->
+<div class="bg-surface rounded-2xl overflow-hidden ambient-shadow border border-outline-variant/30">
+<div class="h-48 bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-on-primary-container">car_repair</span>
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-sm text-primary font-bold">Putri Jaya Workshop</h3>
+<p class="text-secondary font-label-caps tracking-widest">AUTOMOTIVE &amp; PRECISION MACHINING</p>
+<p class="text-on-surface-variant font-body-md">A premier automotive service center specializing in comprehensive diagnostics, engine overhauls, and custom precision machining. We leverage industrial-grade engineering practices to deliver exceptional reliability for consumer and commercial vehicles.</p>
+</div>
+</div>
+<!-- Business 2 -->
+<div class="bg-surface rounded-2xl overflow-hidden ambient-shadow border border-outline-variant/30">
+<div class="h-48 bg-[#006b5f]/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-secondary">local_pharmacy</span>
+</div>
+<div class="p-8 space-y-4">
+<h3 class="font-headline-sm text-primary font-bold">Yusewa Pharma</h3>
+<p class="text-secondary font-label-caps tracking-widest">COMMUNITY HEALTHCARE</p>
+<p class="text-on-surface-variant font-body-md">A modern community pharmacy dedicated to clinical excellence and advanced medicine management. By integrating automated inventory systems with personalized patient care, we ensure accurate, timely, and safe pharmaceutical services.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-16 md:py-24 bg-surface-container-low px-container-padding" id="portfolio">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Featured Projects</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">engineering</span>
+</div>
+<h3 class="font-headline-sm text-primary font-semibold">Mining Truck Engine Overhaul</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Led a critical 5000-hour major overhaul for a fleet of 100-ton haul trucks, improving engine reliability by 15% and reducing unplanned downtime.</p>
+</div>
+<!-- Project 2 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary">schema</span>
+</div>
+<h3 class="font-headline-sm text-primary font-semibold">Pharmacy Inventory Automation System</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Designed and deployed a barcode-driven inventory tracking system that reduced medication dispensing errors to near zero and optimized stock turnover.</p>
+</div>
+<!-- Project 3 -->
+<div class="bg-surface rounded-xl p-6 shadow-sm border border-outline-variant/20 space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<h3 class="font-headline-sm text-primary font-semibold">Workshop Optimization Framework</h3>
+<p class="text-on-surface-variant font-body-md text-sm">Implemented Lean 5S methodologies across the automotive workshop floor, resulting in a 20% increase in daily service throughput and safer working conditions.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Showcase Carousel -->
+<section class="py-16 md:py-24 px-container-padding max-w-7xl mx-auto overflow-hidden" id="learning">
+<div class="text-center space-y-4 mb-12">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Continuous Learning</h2>
+<p class="font-body-md text-on-surface-variant">Ongoing professional development across disciplines.</p>
+</div>
+<div class="swiper learning-swiper pb-12">
+<div class="swiper-wrapper">
+<!-- Slide 1 -->
+<div class="swiper-slide">
+<div class="bg-surface border border-outline-variant/30 rounded-xl p-8 h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">robot_2</span>
+<span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">In Progress</span>
+</div>
+<h3 class="font-headline-sm text-primary font-bold mb-2">Advanced Robotics in Pharma</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Studying automated dispensing systems and sterile compounding robotics to enhance pharmaceutical accuracy.</p>
+<div class="w-full bg-surface-variant rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 65%"></div>
+</div>
+<p class="text-right text-xs text-outline mt-2">65% Completed</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="swiper-slide">
+<div class="bg-surface border border-outline-variant/30 rounded-xl p-8 h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">trending_up</span>
+<span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">In Progress</span>
+</div>
+<h3 class="font-headline-sm text-primary font-bold mb-2">Strategic Business Leadership</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Executive course focusing on cross-industry scaling, organizational behavior, and modern enterprise management.</p>
+<div class="w-full bg-surface-variant rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+</div>
+<p class="text-right text-xs text-outline mt-2">80% Completed</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="swiper-slide">
+<div class="bg-surface border border-outline-variant/30 rounded-xl p-8 h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">precision_manufacturing</span>
+<span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Recently Completed</span>
+</div>
+<h3 class="font-headline-sm text-primary font-bold mb-2">Mining Equipment Reliability</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Advanced certification in predictive maintenance strategies for ultra-class mining haulage systems.</p>
+<div class="w-full bg-surface-variant rounded-full h-2">
+<div class="bg-secondary h-2 rounded-full" style="width: 100%"></div>
+</div>
+<p class="text-right text-xs text-outline mt-2">100% Completed</p>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<!-- Certificates Section -->
+<section class="py-16 md:py-24 bg-surface-container-low px-container-padding" id="certificates">
+<div class="max-w-7xl mx-auto space-y-12">
+<div class="text-center space-y-4">
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">Licenses &amp; Certifications</h2>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<div class="flex items-center gap-4 bg-surface px-6 py-4 rounded-full border border-outline-variant/30 ambient-shadow">
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+<span class="font-body-md text-primary font-medium">Certified Maintenance &amp; Reliability Professional (CMRP)</span>
+</div>
+<div class="flex items-center gap-4 bg-surface px-6 py-4 rounded-full border border-outline-variant/30 ambient-shadow">
+<span class="material-symbols-outlined text-secondary">local_hospital</span>
+<span class="font-body-md text-primary font-medium">Pharmacy Practice License</span>
+</div>
+<div class="flex items-center gap-4 bg-surface px-6 py-4 rounded-full border border-outline-variant/30 ambient-shadow">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-body-md text-primary font-medium">Project Management Professional (PMP)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 md:py-24 px-container-padding max-w-3xl mx-auto" id="contact">
+<div class="bg-primary rounded-3xl p-8 md:p-12 text-center space-y-8 shadow-ambient text-on-primary">
+<h2 class="font-headline-xl text-headline-xl font-bold">Let's Connect</h2>
+<p class="font-body-lg text-primary-fixed-dim max-w-xl mx-auto">Open for engineering consultations, healthcare operational strategy discussions, and strategic partnerships.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6 pt-4">
+<a class="flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="mailto:contact@vanessayusewa.com">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-body-md">contact@vanessayusewa.com</span>
+</a>
+<span class="hidden md:block text-outline-variant/30">|</span>
+<a class="flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="https://linkedin.com/in/vanessayusewa">
+<span class="material-symbols-outlined">link</span>
+<span class="font-body-md">LinkedIn Profile</span>
+</a>
+<span class="hidden md:block text-outline-variant/30">|</span>
+<a class="flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="https://wa.me/1234567890">
+<span class="material-symbols-outlined">call</span>
+<span class="font-body-md">+62 812-3456-7890</span>
+</a>
 </div>
 </div>
 </section>
@@ -172,11 +462,31 @@
                     </p>
 </div>
 <div class="flex gap-6 md:justify-end items-start opacity-100 hover:opacity-80 transition-opacity">
-<a class="text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:underline decoration-secondary decoration-2 underline-offset-4 font-body-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:underline decoration-secondary decoration-2 underline-offset-4 font-body-md" href="https://linkedin.com/in/vanessayusewa">LinkedIn</a>
 <a class="text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:underline decoration-secondary decoration-2 underline-offset-4 font-body-md" href="#">Engineering Journal</a>
 <a class="text-on-surface-variant dark:text-outline hover:text-secondary dark:hover:text-secondary-fixed transition-colors hover:underline decoration-secondary decoration-2 underline-offset-4 font-body-md" href="#">Pharma Practice</a>
 </div>
 </div>
 </footer>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.learning-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    });
+</script>
 </body></html>
